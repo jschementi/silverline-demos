@@ -1,7 +1,7 @@
-Silverline
-Browser, meet Ruby on Rails
+silverline-demos
+A demo rails app showing off the capabilities of the silverline plugin.
 
-= What is it?
+= What is Silverline?
 
 Silverline is a Ruby on Rails plugin which gives the ability to run Ruby in 
 the browser to manipulate HTML or vector graphics. Having Ruby code run in 
@@ -10,60 +10,27 @@ integrated with the rest of the framework.
 
 = Gimme!
 
-http://github.com/jschementi/silverline
-git clone git://github.com/jschementi/silverline.git
+http://github.com/jschementi/silverline-demos
+
+  > mkdir silverline-demos
+  > cd silverline-demos
+  > git clone git://github.com/jschementi/silverline-demos.git
+  > git submodules init
+  > git submodules update
+  > ruby script/server
+
+Open your browser to http://localhost:3000 and view the demos.
+
+= About
 
 This repository holds a Rails test application, Rails 2.0.2 (in vendor/rails), 
-and the current implementation of Silverline (in vendor/plugins/silverline). 
-If you're just interested in the plugin, you can find it here.
+and the current implementation of Silverline (as a submodule in 
+vendor/plugins/silverline). 
 
-Soon, this repository will only be for the plugin. Another repository will be
-made for the test application.
+The stand-alone plugin is located at http://github.com/jschementi/silverline.
 
 You'll also need: Silverlight 2 (Beta 2): Windows or Mac
-Note: Silverline has the developer version of the Silverlight runtime in 
-      vendor/plugins/silveline/install
+Note: You can find the developer version of the Silverlight runtime here:
+      http://github.com/jschementi/silverlight-installs.
 
 You can find more information on Lighthouse: http://silverline.lighthouseapp.com/.
-
-= What can it do?
-
-Silverline can run Ruby on the client because of Silverlight, the 4 megabyte 
-download of the .NET Framework, and IronRuby, the implementation of Ruby on 
-.NET and the Dynamic Language Runtime. Silverline lets you do anything you 
-can do in Silverlight with IronRuby you can do from Rails, but a whole lot 
-easier.
-
-Silverlight applications can use HTML and vector graphics with WPF (either 
-through code or XAML markup for rendering their UI; silverline integrates 
-this capability into Rails by enabling Ruby and XAML partials.
-
-== Easier from Rails
-
-Ruby partials can even use RJS, so simply renaming foo.rjs to foo.rb will 
-avoid the server-side JavaScript generation and actually runfoo.rb on the client. 
-XAML partials give you the ability to render XAML without having to bootstrap 
-Silverlight yourself. XAML partials can also be passed through ERb for 
-server-side or client-side processing.
-
-== Experimental
-
-Note: the following is still a work-in-progress; your feedback is appreciated:
-
-Silverline also lets you run pieces of your Rails application on the client, 
-removing the need to write a separate JavaScript or Flash application simply 
-to move functionality to the client. This is accomplished by flagging certain 
-actions as "client", and running the necessary pieces of your Rails appliation 
-and Rails itself on IronRuby in the browser.
-
-You can also decorate ActiveRecord models with "acts_as_client" so any calls 
-to ActiveRecord on the client get translated into ActiveResource calls to a 
-restful API on the ActiveRecord model that was decorated.
-
-= Let's get to work!
-
-Feel like Silverline is missing something? Feel free to clone the repository 
-and add anything you want. And if you want to let us know about your awesome 
-change, just send us a pull-request on github.com!
-	
-		
