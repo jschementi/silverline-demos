@@ -1,3 +1,0 @@
-[submodule "vendor/plugins/silverline"]
-	path = vendor/plugins/silverline
-	url = git@github.com/jschementi/silverline.git
