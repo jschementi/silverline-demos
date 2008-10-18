@@ -12,11 +12,10 @@ integrated with the rest of the framework.
 
 http://github.com/jschementi/silverline-demos
 
-  > mkdir silverline-demos
-  > cd silverline-demos
   > git clone git://github.com/jschementi/silverline-demos.git
   > git submodules init
   > git submodules update
+  > rake db:migrate
   > ruby script/server
 
 Open your browser to http://localhost:3000 and view the demos.
@@ -29,7 +28,7 @@ vendor/plugins/silverline).
 
 The stand-alone plugin is located at http://github.com/jschementi/silverline.
 
-You'll also need: Silverlight 2 (Beta 2): Windows or Mac
+You'll also need Silverlight 2 for Windows or Mac
 Note: You can find the developer version of the Silverlight runtime here:
       http://github.com/jschementi/silverlight-installs.
 
