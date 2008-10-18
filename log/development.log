@@ -1,0 +1,105 @@
+Silverline: Generating client.xap
+
+
+Processing RenderTestController#xaml_erb_partial (for 127.0.0.1 at 2008-10-18 15:45:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWYyNWI2NDJhZWU3ZWNkYTMwZGMwNzU4M2E5ZjYw%0AODkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--450c70a377e2ea26873259ec0d0392fa662e00c7
+  Parameters: {"action"=>"xaml_erb_partial", "controller"=>"render_test"}
+Rendering template within layouts/render_test
+Rendering render_test/clock_xaml_erb
+Completed in 0.04200 (23 reqs/sec) | Rendering: 0.03600 (85%) | DB: 0.00000 (0%) | 200 OK [http://localhost/render_test/xaml_erb_partial]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 15:45:25) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWYyNWI2NDJhZWU3ZWNkYTMwZGMwNzU4M2E5ZjYw%0AODkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--450c70a377e2ea26873259ec0d0392fa662e00c7
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/client.xap" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1424:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:280
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+Rendering C:/Users/jimmysch/Projects/vsl/Merlin/Users/jimmysch/silverline-demos/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-10-18 15:45:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMWYyNWI2NDJhZWU3ZWNkYTMwZGMwNzU4M2E5ZjYw%0AODkiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh%0Ac2h7AAY6CkB1c2VkewA%3D--450c70a377e2ea26873259ec0d0392fa662e00c7
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/client.xap" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1441:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing.rb:1424:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:170:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:159:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:158:in `process_client'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:285:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `initialize'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `new'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel.rb:268:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:282:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `each'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/configurator.rb:281:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:128:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/lib/mongrel/command.rb:212:in `run'
+    C:/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.4-x86-mswin32-60/bin/mongrel_rails:280
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:489:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:342:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:496:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    script/server:3:in `require'
+    script/server:3
+
+Rendering C:/Users/jimmysch/Projects/vsl/Merlin/Users/jimmysch/silverline-demos/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
