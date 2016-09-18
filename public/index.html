@@ -1,256 +1,160 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <title>Silverline: Ruby on the client</title>
-    <style type="text/css" media="screen">
-    body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-    }
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Silverline: Introduce your browser to Ruby on Rails</title>
 
-    h1 {
-        font-size: 28px;
-        color: #000;
-    }
+    <link href="facebox/facebox.css" media="screen" rel="stylesheet" type="text/css" />
 
-    a  {color: #03c}
-    a:hover {
-        background-color: #03c;
-        color: white;
-        text-decoration: none;
-    }
+    <script src="facebox/jquery.js" type="text/javascript"></script>
+    <script src="facebox/facebox.js" type="text/javascript"></script>
 
+    <script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $('a[rel*=facebox]').facebox()
+    })
+    </script>
 
-    #page {
-        background-color: #f0f0f0;
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    #content {
-        float: left;
-        background-color: white;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 500px;
-    }
-
-    #sidebar {
-        float: right;
-        width: 175px;
-    }
-
-    #footer {
-        clear: both;
-    }
-
-
-    #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-    }
-
-
-    #header {
-        /*background-image: url("images/rails.png");*/
-        background-repeat: no-repeat;
-        background-position: top left;
-        height: 64px;
-    }
-    #header h1, #header h2 {margin: 0}
-    #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-    }
-
-
-    #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-
-    #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -11px;
-    }
-    #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-    }
-    #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-    }
-    #about-content td.name  {color: #555}
-    #about-content td.value {color: #000}
-
-    #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-    }
-    #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-    }
-
-
-    #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-    }
-    #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-    }
-    #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-    }
-    #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-    }
-    #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-    }
-    #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-    }
-    #getting-started li p {
-        color: #555;
-        font-size: 13px;
-    }
-
-
-    #search {
-        margin: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 11px;
-    }
-    #search input {
-        font-size: 11px;
-        margin: 2px;
-    }
-    #search-text {width: 170px}
-
-
-    #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-    }
-    #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-    }
-    #sidebar li {
-        list-style-type: none;
-    }
-    #sidebar ul.links li {
-        margin-bottom: 5px;
-    }
-
-    </style>
+    <link rel="stylesheet" type='text/css' href="master.css" />
 </head>
+
 <body>
-    <div id="page">
-        <div id="sidebar">
+    <div class="header-wrapper">
+        <div class="header">
+            <h1><a href="index.html"><img src="silverline.png" alt="Silverline" /></a></h1>
+            <h2>Browser, meet Ruby on Rails</h2>
+        </div>
+    </div>
 
+    <div class="page_body">
+
+        <div class="container">
+            <h2>What is it?</h2>
+            <p>
+                <b>Silverline</b> is a 
+                <a target="_blank" href="http://www.rubyonrails.org">Ruby on Rails</a> plugin
+                which gives the ability to run 
+                <a target="_blank" href="http://en.wikipedia.org/wiki/Ruby_%28programming_language%29">Ruby</a>
+                in the browser to manipulate 
+                HTML or vector
+                graphics. Having Ruby code run in the browser
+                elevates client programming in Rails to be first-class, and 
+                integrated with the rest of the framework.
+            </p> 
+        </div>
+     <div class="container">
+          <h2>Demos</h2>
+          <p><a href="demo.html">Check out the live demos of a Ruby on Rails application using Silverline</a></p>
         </div>
 
-        <div id="content">
-            <div id="header">
-                <h1>Silverline</h1>
-                <h2>Integrating Ruby on Rails and Silverlight</h2>
-            </div>
-
-            <div id="getting-started">
-                <p style="font-size: 18px;">
-                   Go to <a href="http://schementi.com/silverline">Silverline website</a>
-                </p>
-                <h1>Demos</h1>
-                <h2>Making an appearance @ RailsConf
-                <ol>
-                    <li>
-                        <h2><a href="/tryruby">Try IronRuby</a></h2>
-                        <p>Ruby console in the browser, with a tutorial
-                            to follow along with</p>
-                    </li>
-                    
-                    <li>
-                        <h2><a href="/watch">Watch</a></h2>
-                        <p>Shows off vector graphics rendering of a ticking watch</p>
-                    </li>
-                    <!--
-                    <li>
-                        <h2><a href="/assistment">Assistment</a></h2>
-                        <p>Tutor written in Rails, but now running on the client
-                            through Silverline with no modification.</p>
-                    </li>-->
-                </ol>
-
-                <h1>Testing the plugin</h1>
-                <h2>I swear, there's specs too ...</h2>
-                <ol>
-                    <li>
-                        <h2><a href="/posts">render :partial => "foo.rb"</a></h2>
-                        <p>Scaffold on model, using Ruby. Rendering a simple
-                        ruby partial which displays to HTML.</p>
-                    </li>
-
-                    <li>
-                        <h2><a href="/render_test/xaml_partial">render :partial => "clock.xaml"</a></h2>
-                        <p>Simple example of loading XAML as a partial.</p>
-                    </li>
-                    
-                    <li>
-                        <h2><a href="/render_test/xaml_erb_partial">render :partial => "clock.xaml.erb"</a></h2>
-                        <p>Running a XAML partial through ERb first, just like rhtml</p>
-                    </li>
-                    
-                    <li>
-                        <h2><a href="/render_test/ruby_partial">render :partial => "clock.rb"</a></h2>
-                        <p>Simple example of loading a Ruby partial, which
-                        in tern displays a XAML partial, and then the Ruby code
-                        runs against it.</p>
-                    </li>
-
-                    <li>
-                        <h2><a href="/client">client :foo</a></h2>
-                        <p>Running Rails controllers on the client</p>
-                    </li>
-                </ol>
-            </div>
+        <div class="container">
+            <h2>Gimme!</h2>
+            <p class="code">
+            <code>
+                    <a target="_blank"
+                      href="http://github.com/jschementi/silverline/">github.com/jschementi/silverline</a>
+                </code>
+            </p>
+            <p style="margin-bottom: 5px">
+                This repository holds the Rails plugin itself. For a demo
+                application that uses <b>silverline</b>, check out 
+                <a target="_blank"
+                  href="http://github.com/jschementi/silverline-demos">github.com/jschementi/silverline-demos</a>, which is also this website.
+            </p>
+            <br />
+            <p>
+              You'll also need Silverlight 2 <span class="version">(Beta
+                2)</span>:<br />
+              <a
+                href="http://www.microsoft.com/silverlight/resources/install.aspx?v=2.0.30523.6"
+                target="_blank">Windows and Mac</a>
+            </p>
+            <p>
+              <span style="font-style: italic; margin-top: 0px; margin-bottom: 5px; color: gray; font-size: 10px; line-height: 12px;">
+                Note: You can also find developer version of the Silverlight
+                runtime in <a
+                  href="http://github.com/jschementi/silverlight-installs">github.com/jschementi/silverlight-installs</a>
+              </span><br />
+            </p>
+            <p>
+                You can find more information on <a target="_blank" href="http://silverline.lighthouseapp.com">Lighthouse</a>.
+            </p>
         </div>
+    </div>
 
-        <div id="footer">&nbsp;</div>
+    <div class="page_body small">
+
+        <div class="container">
+            <h3>What can it do?</h3>
+            <p>
+                Silverline can run Ruby on the client because of 
+                <a target="_blank" href="http://en.wikipedia.org/wiki/Silverlight#Silverlight_2">Silverlight</a>, 
+                the 4 megabyte download of the .NET Framework, and 
+                <a target="_blank" href="http://www.ironruby.com">IronRuby</a>, 
+                the implementation of Ruby on .NET and the Dynamic Language Runtime.
+                Silverline lets you do anything you can do in Silverlight with 
+                IronRuby</a> you can do from Rails, but a whole lot easier.
+            </p>
+            <p>
+                Silverlight applications can use 
+                <a target="_blank" href="http://en.wikipedia.org/wiki/HTML">HTML</a> and 
+                vector graphics with 
+                <a target="_blank" href="http://en.wikipedia.org/wiki/Windows_Presentation_Foundation">WPF</a>
+                (either through code or 
+                <a target="_blank" href="http://en.wikipedia.org/wiki/XAML">XAML</a> markup 
+                for rendering their UI; <b>silverline</b> integrates this 
+                capability into Rails by enabling Ruby and XAML partials. 
+            </p>
+        </div>
+        <div class="container">
+            <h3>Easier from Rails</h3>
+            <p>
+                Ruby partials can even use 
+                <a target="_blank" href="http://api.rubyonrails.org/classes/ActionView/Helpers/PrototypeHelper/JavaScriptGenerator/GeneratorMethods.html">RJS</a>,
+                so simply renaming foo.rjs to foo.rb will avoid the server-side 
+                JavaScript generation and actually runfoo.rb on the client. 
+                XAML partials give you the ability to render XAML without 
+                having to bootstrap Silverlight yourself. XAML partials can also 
+                be passed through ERb for server-side or client-side processing.
+            </p>
+        </div>
+        <div class="container">
+            <h3>Experimental</h3>
+            <p>
+                <i>
+                    Note: the following is still a work-in-progress; your feedback is
+                    appreciated:
+                </i>
+            </p>
+            <p>
+                <b>Silverline</b> also lets you run pieces of your Rails application 
+                on the client, removing the need to write a separate JavaScript or 
+                Flash application simply to move functionality to the client. This 
+                is accomplished by flagging certain actions as "client", and running 
+                the necessary pieces of your Rails appliation and Rails itself on 
+                IronRuby in the browser. 
+            </p>
+            <p>
+                You can also decorate ActiveRecord models 
+                with "acts_as_client" so any calls to ActiveRecord on the client 
+                get translated into ActiveResource calls to a restful API on the 
+                ActiveRecord model that was decorated.
+            </p>
+        </div>
+    </div>
+    <div class="page_body">
+        <div class="container">
+            <h3>Let's get to work!</h3>
+            <p>
+                Feel like Silverline is missing something? Feel free to clone 
+                the repository and add anything you want. And if you want to 
+                let us know about your awesome change, just send us a pull-request
+                on github.com! 
+            </p>
+        </div>
     </div>
 </body>
+
 </html>
